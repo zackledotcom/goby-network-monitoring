@@ -1,8 +1,4 @@
 
-Built by https://www.blackbox.ai
-
----
-
 # Goby
 
 Goby is a powerful network monitoring and security analysis tool that allows users to monitor network activity, analyze security metrics, and visualize network graphs. Built with modern web technologies, it provides an intuitive interface and robust data processing capabilities.
