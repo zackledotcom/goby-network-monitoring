@@ -1,0 +1,30 @@
+{
+  "name": "goby",
+  "version": "1.0.0",
+  "description": "Network monitoring and security analysis tool",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2",
+    "systeminformation": "^5.9.13",
+    "node-nmap": "^4.0.0",
+    "network": "^0.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-force-graph": "^1.41.7",
+    "tailwindcss": "^2.2.19",
+    "axios": "^0.24.0",
+    "chart.js": "^3.7.0",
+    "react-chartjs-2": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.7.2"
+  }
+}
