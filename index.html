@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Goby Network Monitor - A powerful network monitoring and security analysis tool">
+    <meta name="theme-color" content="#2563eb">
+    <title>Goby Network Monitor</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/tailwindlabs/heroicons/master/optimized/24/outline/shield-check.svg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: var(--primary-gradient);
+        }
+        
+        .gradient-text {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        
+        /* Loading Animation */
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 3px solid #2563eb;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Modal Animation */
+        .modal-enter {
+            animation: modalFade 0.3s ease-out;
+        }
+        
+        @keyframes modalFade {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div id="root"></div>
+    <script type="module" src="/frontend/main.jsx"></script>
+    
+    <!-- No-Script Fallback -->
+    <noscript>
+        <div class="fixed inset-0 flex items-center justify-center bg-white">
+            <div class="text-center p-6">
+                <h1 class="text-2xl font-bold text-gray-900 mb-4">JavaScript Required</h1>
+                <p class="text-gray-600">
+                    Please enable JavaScript to use Goby Network Monitor.
+                </p>
+            </div>
+        </div>
+    </noscript>
+</body>
+</html>
